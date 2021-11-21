@@ -66,14 +66,14 @@ public class BOJ_1260_2 {
 		}
 		Arrays.fill(visit, false);
 		for(int i=0; i<m; i++){
-		String edge = br.readLine();
-		StringTokenizer st1 = new StringTokenizer(edge," ");
-		int a = Integer.parseInt(st1.nextToken());
-		int b = Integer.parseInt(st1.nextToken());
-		map[a][b]=1;
-		map[b][a]=1;
-		arrayList.get(a).put(b, a); // 간선에 방향이 없다면 // 간선에 가중치가 있다면 값으로 넣어준다.
-		arrayList.get(b).put(a, b); // 반대로 넣어주면 안된다. 
+			String edge = br.readLine();
+			StringTokenizer st1 = new StringTokenizer(edge," ");
+			int a = Integer.parseInt(st1.nextToken());
+			int b = Integer.parseInt(st1.nextToken());
+			map[a][b]=1;
+			map[b][a]=1;
+			arrayList.get(a).put(b, a); // 간선에 방향이 없다면 // 간선에 가중치가 있다면 값으로 넣어준다.
+			arrayList.get(b).put(a, b); // 반대로 넣어주면 안된다. 
 		}
 		dfs(v);
 		System.out.println();
