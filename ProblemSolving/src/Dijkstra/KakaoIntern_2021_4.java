@@ -2,7 +2,7 @@ package Dijkstra;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
-public class KakaoIntern_2021 {
+public class KakaoIntern_2021_4 {
 	
 	private final static int MAX_N = 1001;
 	private final static int INF = Integer.MAX_VALUE;

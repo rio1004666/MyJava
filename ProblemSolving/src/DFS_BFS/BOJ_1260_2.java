@@ -61,8 +61,8 @@ public class BOJ_1260_2 {
 		visit = new boolean[n+1];
 		arrayList = new ArrayList<>();
 		for(int j=0; j<n+1;j++){
-		Arrays.fill(map[j], 0);
-		arrayList.add(new TreeMap<Integer, Integer>());
+			Arrays.fill(map[j], 0);
+			arrayList.add(new TreeMap<Integer, Integer>());
 		}
 		Arrays.fill(visit, false);
 		for(int i=0; i<m; i++){
